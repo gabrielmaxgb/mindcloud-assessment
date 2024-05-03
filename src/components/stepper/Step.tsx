@@ -17,10 +17,13 @@ function Step(props: IStepProps) {
       })}
     >
       <section className="flex items-center">
-        <div className="mr-2">
+        <div className="mr-1">
           {props.stepData.icon}
         </div>
-        <span>
+        <div className="flex items-center justify-center bg-gray-100 rounded-md text-xs font-semibold text-gray-600 mx-1 p-1">
+          {props.stepData.pings}
+        </div>
+        <span className="ml-1">
           {props.stepData.name}
         </span>
       </section>
